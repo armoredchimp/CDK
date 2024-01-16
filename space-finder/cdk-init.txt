@@ -1,0 +1,7 @@
+Initialize CDK project from scratch:
+- create folder
+- npm init -y
+- install dependencies
+- create Launcher.ts file
+- create empty stack
+- create cdk.json file
