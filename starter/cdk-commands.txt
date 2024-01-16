@@ -1,0 +1,7 @@
+cdk init app --language typescript
+cdk bootstrap
+cdk diff
+cdk synth
+ckd deploy
+
+cdk destroy
