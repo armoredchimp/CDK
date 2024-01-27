@@ -13,7 +13,7 @@ async function handler(event: APIGatewayProxyEvent, context: Context) {
 
   const response: APIGatewayProxyResult = {
     statusCode: 200,
-    body: JSON.stringify('Hello from lambda!, this are your buckets: ' + JSON.stringify(listBucketsResult))
+    body: JSON.stringify('Hello from lambda!, these are your buckets: ' + JSON.stringify(listBucketsResult))
   }
   console.log(event);
   return response;
