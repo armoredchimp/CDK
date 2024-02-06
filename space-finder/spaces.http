@@ -1,3 +1,12 @@
 GET https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces
 ### 
 POST https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces
+content-type: application/json
+
+  {
+    "location":"Paris"
+  }
+###
+GET https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
+
+###
