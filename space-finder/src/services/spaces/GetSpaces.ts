@@ -1,4 +1,5 @@
 import { DynamoDBClient, GetItemCommand, ScanCommand } from '@aws-sdk/client-dynamodb';
+import { unmarshall } from '@aws-sdk/util-dynamodb';
 import { Context, APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
 
@@ -15,9 +16,10 @@ export async function getSpaces(event: APIGatewayProxyEvent, ddbClient: DynamoDB
         }
       }))
       if (getItemResponse.Item) {
+        const unmarshalledItem = unmarshall(getItemResponse.Item)
         return {
           statusCode: 200,
-          body: JSON.stringify(getItemResponse.Item)
+          body: JSON.stringify(unmarshalledItem)
         }
       } else {
         return {

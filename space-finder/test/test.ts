@@ -5,8 +5,11 @@ process.env.TABLE_NAME = 'SpacesTable-067eddd7d7c3'
 
 
 handler({
-  httpMethod: 'GET',
+  httpMethod: 'PUT',
   queryStringParameters: {
     id: 'asdfasdf'
-  }
+  },
+  body: JSON.stringify({
+    location: 'Helsinki'
+  })
 } as any, {} as any)
