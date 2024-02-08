@@ -8,6 +8,11 @@ content-type: application/json
   }
 ###
 GET https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
+###
+
+###
+DELETE https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
+###
 
 ###
 PUT https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
