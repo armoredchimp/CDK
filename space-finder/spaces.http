@@ -4,20 +4,21 @@ POST https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces
 content-type: application/json
 
   {
-    "location":"Paris"
+    "location":"Berlin",
+    "name":"Berlin"
   }
 ###
-GET https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
+GET https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=92e92544-1cae-4cca-b012-f76f36845001
 ###
 
 ###
-DELETE https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
+DELETE https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=61461847-7a9d-4b0b-8f3d-94c7daf6a318
 ###
 
 ###
-PUT https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=34
+PUT https://bapbmjvn4l.execute-api.us-west-1.amazonaws.com/prod/spaces?id=92e92544-1cae-4cca-b012-f76f36845001
 content-type: application/json
 
   {
-    "location":"Rome"
+    "name":"Roma"
   }
